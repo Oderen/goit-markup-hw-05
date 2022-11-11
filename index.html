@@ -21,6 +21,7 @@
   <body class="body">
     <header class="page-header">
       <div class="container container-header">
+
         <!-- Header- Logo+navigators -->
 
         <nav class="header-nav">
@@ -32,19 +33,19 @@
             <li class="item">
               <a
                 href="./index.html"
-                class="header-list-link interactive-element link header-active-link"
+                class="header-list-link link header-active-link"
                 >Студія</a
               >
             </li>
             <li class="item">
               <a
                 href="./portfolio.html"
-                class="header-list-link interactive-element link"
+                class="header-list-link link"
                 >Портфоліо
               </a>
             </li>
             <li class="item">
-              <a href="#" class="header-list-link interactive-element link"
+              <a href="#" class="header-list-link link"
                 >Контакти</a
               >
             </li>
@@ -61,7 +62,7 @@
               </svg>
               <a
                 href="mailto:info@devstudio.com"
-                class="contacts-mail interactive-element"
+                class="header-mail"
                 >info@devstudio.com</a
               >
             </div>
@@ -73,7 +74,7 @@
               </svg>
               <a
                 href="tel:+380961111111"
-                class="contacts-tel interactive-element"
+                class="header-telephone"
                 >+38 096 111 11 11</a
               >
             </div>
@@ -83,6 +84,7 @@
     </header>
 
     <main>
+      
       <!-- Hero -->
 
       <section class="section hero-page">
@@ -94,7 +96,7 @@
               >
               <span class="hero-your-business">вашого бізнесу</span>
             </h1>
-            <button type="button" class="hero-title-button">
+            <button type="button" class="hero-title-button" data-modal-open>
               Замовити послугу
             </button>
           </div>
@@ -422,6 +424,7 @@
     <footer class="footer">
       <div class="container footer-page">
         <div class="logo-address">
+
           <!-- Logo2 -->
 
           <a href="/" class="interactive-element logo logo-footer">
@@ -438,7 +441,7 @@
                   href="https://goo.gl/maps/HX44u6QqczXMJnG8A"
                   target="_blank"
                   rel="noopener norefferer nofollow"
-                  class="interactive-element address link"
+                  class=" address link"
                 >
                   м. Київ, пр-т Лесі Українки, 26
                 </a>
@@ -446,14 +449,14 @@
               <li class="footer-second-li">
                 <a
                   href="emailto:info@devstudio.com"
-                  class="footer-mail interactive-element address link"
+                  class="footer-mail  address link"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="footer-third-li">
                 <a
                   href="tel:+380961111111"
-                  class="footer-tel interactive-element address link"
+                  class="footer-tel  address link"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -495,5 +498,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close>
+          <svg class="modal-button-svg" width="11" height="11">
+            <use href="./images/criss-cross.svg#criss-cross"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
