@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework2</title>
+    <title>Homework</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,50 +18,58 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
-  <header class="portfolio-header">
-  <div class="container container-header">
+    <header class="portfolio-header">
+      <div class="container container-header">
+        <!-- Header- Logo+navigators -->
 
-    <!-- Header- Logo+navigators -->
+        <nav class="header-nav">
+          <a href="/" class="interactive-element logo logo-header"
+            ><span class="logo-web">Web</span
+            ><span class="logo-studio">Studio</span></a
+          >
+          <ul class="list header-nav-list">
+            <li class="item">
+              <a href="./index.html" class="header-list-link link">Студія</a>
+            </li>
+            <li class="item">
+              <a
+                href="./portfolio.html"
+                class="header-list-link link header-active-link"
+                >Портфоліо
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="header-list-link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
 
-    <nav class="header-nav">
-      <a href="/" class="interactive-element logo logo-header"><span class="logo-web">Web</span><span
-          class="logo-studio">Studio</span></a>
-      <ul class="list header-nav-list">
-        <li class="item">
-          <a href="./index.html" class="header-list-link link">Студія</a>
-        </li>
-        <li class="item">
-          <a href="./portfolio.html" class="header-list-link link header-active-link">Портфоліо
-          </a>
-        </li>
-        <li class="item">
-          <a href="#" class="header-list-link link">Контакти</a>
-        </li>
-      </ul>
-    </nav>
+        <!-- Contacts -->
 
-    <!-- Contacts -->
-
-    <ul class="list list-contacts">
-      <li class="item">
-        <div class="mail">
-          <svg class="icon-envelope">
-            <use href="./images/symbol-defs.svg#icon-envelope"></use>
-          </svg>
-          <a href="mailto:info@devstudio.com" class="header-mail">info@devstudio.com</a>
-        </div>
-      </li>
-      <li>
-        <div class="tel">
-          <svg class="icon-telephone">
-            <use href="./images/symbol-defs.svg#telephone"></use>
-          </svg>
-          <a href="tel:+380961111111" class="header-telephone">+38 096 111 11 11</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-  </header>
+        <ul class="list list-contacts">
+          <li class="item">
+            <div class="mail">
+              <svg class="icon-envelope">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              <a href="mailto:info@devstudio.com" class="header-mail"
+                >info@devstudio.com</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="tel">
+              <svg class="icon-telephone">
+                <use href="./images/symbol-defs.svg#telephone"></use>
+              </svg>
+              <a href="tel:+380961111111" class="header-telephone"
+                >+38 096 111 11 11</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <main>
       <h1 hidden class="page-title">Portfolio</h1>
@@ -123,14 +131,16 @@
           <h2 hidden>Gallery</h2>
           <ul class="list gallery-list">
             <li class="item">
-              
               <div class="portfolio-photo-container">
                 <img src="./images/laptop.jpg" alt="laptop" width="370" />
                 <div class="photo-inner-container">
-                <p class="photo-inner-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                вичерпні відомості про компанію чи приватну особу.</p>
+                  <p class="photo-inner-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
-              </div>            
+              </div>
 
               <div class="portfolio-card">
                 <h3 class="gallery-name">Технокряк</h3>
@@ -138,7 +148,7 @@
               </div>
             </li>
             <li class="item">
-                <img src="./images/basketball.jpg" alt="basketball" width="370" />
+              <img src="./images/basketball.jpg" alt="basketball" width="370" />
               <div class="portfolio-card">
                 <h3 class="gallery-name">Постер New Orlean vs Golden Star</h3>
                 <p class="gallery-description">Дизайн</p>
@@ -208,7 +218,6 @@
     <footer class="footer">
       <div class="container footer-page">
         <div class="logo-address">
-
           <!-- Logo2 -->
 
           <a href="/" class="interactive-element logo logo-footer">
@@ -238,9 +247,7 @@
                 >
               </li>
               <li class="footer-third-li">
-                <a
-                  href="tel:+380961111111"
-                  class="footer-tel address link"
+                <a href="tel:+380961111111" class="footer-tel address link"
                   >+38 096 111 11 11</a
                 >
               </li>
